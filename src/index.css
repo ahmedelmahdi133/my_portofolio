@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    direction: rtl;
+  }
+
+  /* Gradient backgrounds */
+  .gradient-bg {
+    background: linear-gradient(135deg, #0f172a 0%, #0a0e1a 50%, #1e293b 100%);
+  }
+
+  .gradient-bg-light {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+  }
+
+  .section-bg-dark {
+    background: linear-gradient(135deg, #1e293b 0%, #111827 50%, #0f172a 100%);
+  }
+
+  .section-bg-light {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e2e8f0 100%);
+  }
+
+  /* Enhanced light mode styles */
+  .light-mode-card {
+    @apply bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-lg hover:shadow-xl;
+  }
+
+  .dark-mode-card {
+    @apply bg-dark-lighter/80 backdrop-blur-sm border border-gray-700/50 shadow-lg hover:shadow-xl;
+  }
+
+  /* Smooth transitions for theme switching */
+  * {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .card {
+    @apply light-mode-card dark:dark-mode-card rounded-xl transition-all duration-300 transform hover:-translate-y-2;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Enhanced link styling */
+  .link-primary {
+    @apply text-primary hover:text-primary/80 transition-colors duration-300;
+  }
+
+  /* Enhanced card hover effects */
+  .card-hover {
+    @apply hover:shadow-2xl hover:-translate-y-3 transition-all duration-500;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+} 
