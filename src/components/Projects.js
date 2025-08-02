@@ -30,6 +30,18 @@ const Projects = () => {
       github: 'https://github.com/ahmedelmahdi133',
       live: '#',
       featured: false
+    },
+    {
+      id: 3,
+      title: 'Twitter Bot',
+      description: 'بوت تويتر ذكي للتفاعل التلقائي وإدارة المحتوى',
+      image: 'https://images.unsplash.com/photo-1611262588024-d12430b98920?w=500&h=300&fit=crop',
+      category: 'Backend',
+      technologies: ['JavaScript', 'Node.js', 'Twitter API', 'Vercel'],
+      icons: [FaNodeJs],
+      github: 'https://github.com/ahmedelmahdi133/tweeter_bot',
+      live: 'https://tweeter-bot-cyan.vercel.app',
+      featured: false
     }
   ];
 
