@@ -35,7 +35,7 @@ const Projects = () => {
       id: 3,
       title: 'Twitter Bot',
       description: 'بوت تويتر ذكي للتفاعل التلقائي وإدارة المحتوى',
-      image: 'https://images.unsplash.com/photo-1611262588024-d12430b98920?w=500&h=300&fit=crop',
+      image: 'https://www.thinkdesignagency.co.uk/wp-content/uploads/2023/07/Twitter-rebrands-as-X.jpg',
       category: 'Backend',
       technologies: ['JavaScript', 'Node.js', 'Twitter API', 'Vercel'],
       icons: [FaNodeJs],
