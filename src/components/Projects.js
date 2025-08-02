@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaReact, FaJs, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss, SiNextdotjs, SiTypescript, SiSocketdotio } from 'react-icons/si';
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiSocketdotio } from 'react-icons/si';
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('الكل');
@@ -21,60 +21,12 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'منصة إدارة المشاريع',
-      description: 'تطبيق لإدارة المشاريع والمهام مع نظام تعاوني متقدم',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
-      category: 'Full Stack',
-      technologies: ['React', 'TypeScript', 'Node.js', 'Socket.io', 'MongoDB'],
-      icons: [FaReact, SiTypescript, FaNodeJs, SiMongodb],
-      github: 'https://github.com/ahmedelmahdi133',
-      live: '#',
-      featured: true
-    },
-    {
-      id: 3,
-      title: 'API إدارة المستخدمين',
-      description: 'API متكامل لإدارة المستخدمين مع نظام مصادقة متقدم',
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop',
-      category: 'Backend',
-      technologies: ['Node.js', 'Express', 'MongoDB', 'JWT', 'bcrypt'],
-      icons: [FaNodeJs, SiExpress, SiMongodb],
-      github: 'https://github.com/ahmedelmahdi133',
-      live: '#',
-      featured: false
-    },
-    {
-      id: 4,
-      title: 'تطبيق الطقس التفاعلي',
-      description: 'تطبيق طقس تفاعلي مع خرائط وبيانات مفصلة',
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=500&h=300&fit=crop',
-      category: 'Frontend',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Weather API'],
-      icons: [FaReact, SiTypescript, SiTailwindcss],
-      github: 'https://github.com/ahmedelmahdi133',
-      live: '#',
-      featured: false
-    },
-    {
-      id: 5,
-      title: 'مدونة تقنية تفاعلية',
-      description: 'مدونة تقنية مع نظام إدارة محتوى و SEO محسن',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop',
-      category: 'Full Stack',
-      technologies: ['Next.js', 'Node.js', 'MongoDB', 'Markdown', 'Tailwind CSS'],
-      icons: [SiNextdotjs, FaNodeJs, SiMongodb, SiTailwindcss],
-      github: 'https://github.com/ahmedelmahdi133',
-      live: '#',
-      featured: false
-    },
-    {
-      id: 6,
       title: 'تطبيق محادثات في الوقت الفعلي',
       description: 'تطبيق محادثات متقدم مع ميزات متعددة المستخدمين',
       image: 'https://images.unsplash.com/photo-1526378722484-bd91ca387e72?w=500&h=300&fit=crop',
       category: 'Full Stack',
       technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'JWT'],
-      icons: [FaReact, FaNodeJs, SiMongodb],
+      icons: [FaReact, FaNodeJs, SiSocketdotio, SiMongodb],
       github: 'https://github.com/ahmedelmahdi133',
       live: '#',
       featured: false
